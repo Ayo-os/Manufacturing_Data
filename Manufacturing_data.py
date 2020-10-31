@@ -31,11 +31,11 @@ class Analyzer:
         Return data in numpy array for all numerical value and
         data with 'other values' return in DataFrame object
         """
-        fname = 'C:/Users/OSENIA/Downloads/PDF Embed/secom.data'
+        fname = 'secom.data'
         
         self.data = np.loadtxt(fname)
             
-        flabels = open('C:/Users/OSENIA/Downloads/PDF Embed/secom_labels.data')
+        flabels = open('secom_labels.data')
         self.labels_df = pd.read_table(flabels, engine = 'python', sep = '\s') 
         flabels.close()
     
